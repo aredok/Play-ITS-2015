@@ -1,2 +1,16 @@
 module Car2X_ConfigSystem {
+	import from Car2X_Types all;
+
+	type port ElmPort message{
+		in ElmRequest;
+		out ElmResponse;
+	}
+	
+	type component ElmComponentType {
+		port ElmPort elmPort;
+	}
+	
+	type component SystemComponentType {
+		port ElmPort elmPort;
+	}
 }
